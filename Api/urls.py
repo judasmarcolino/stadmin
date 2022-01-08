@@ -5,7 +5,7 @@ from . import views
 
 urlpatterns = [
 
-    path('fornecedores',views.fornecedores, name="fornecedores")
+    path('',views.fornecedores, name="fornecedores")
     
 ]
 
