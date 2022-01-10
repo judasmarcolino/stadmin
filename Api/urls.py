@@ -5,7 +5,10 @@ from . import views
 
 urlpatterns = [
 
-    path('',views.fornecedores, name="fornecedores")
+
+    #Logistic
+    path('logistica', views.logistica, name="logistica"),
+    path('',views.fornecedores, name="fornecedores"),
     
 ]
 
