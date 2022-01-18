@@ -10,5 +10,8 @@ urlpatterns = [
     path('logistica', views.logistica, name="logistica"),
     path('',views.fornecedores, name="fornecedores"),
     
+
+    path("prospensao", views.prospensao, name="prospensao")
+    
 ]
 

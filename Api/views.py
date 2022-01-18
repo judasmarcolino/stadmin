@@ -6,3 +6,9 @@ def fornecedores(request):
 
 def logistica(request):
     return render(request, 'frontend/Menu/logistica.html')
+
+def prospensao(request):
+    return render(request, 'frontend/prospensao.html')
+
+def projecto(request):
+    return render (request, 'frontend/pojecto.html' )

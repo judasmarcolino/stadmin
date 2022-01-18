@@ -149,10 +149,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <img src="{% static 'dist/img/AdminLTELogo.png' %}" alt="S&T" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
-      <span class="brand-text font-bold " style="color:chocolate "  >S&T</span>
+    <a href="#" class="brand-link">
+      <img src="{% static 'dist/img/logo.png' %}" alt="S&T" class="brand-image img-circle elevation-2"
+           style="opacity:.9 ">
+      <span class="brand-text font-bold " style="color:chocolate "  >Sociedade e Territorio</span>
     </a>
 
     <!-- Sidebar -->
@@ -160,7 +160,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{% static 'dist/img/user2-160x160.jpg' %}" class="img-circle elevation-2" alt="User Image">
+          <img src="{% static 'dist/img/user.jpg' %}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Judas Marcolino</a>
@@ -203,20 +203,28 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <p>Logistica</p>
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a href="./index3.html" class="nav-link">
+                      <i class="far fa-circle nav-icon text-warning"></i>
+                      <p>Monitores Sociais</p>
+                    </a>
+                  </li>
+
+
                 </ul>
               </li>
 
               <li class="nav-item has-treeview">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-tree"></i>
+                  <i class="nav-icon fas fa-bullhorn"></i>
                   <p>
-                    Comcação e Marketing
+                    Comcação e N Negocios
                     <i class="fas fa-angle-left right"></i>
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="pages/UI/general.html" class="nav-link">
+                    <a href="{% url 'prospensao' %}"class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Prospensão</p>
                     </a>
@@ -233,9 +241,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
               <li class="nav-item has-treeview">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-tree"></i>
+                  <i class="nav-icon fas fa-tasks"></i>
                   <p>
-                    Logistica
+                    TASK
                     <i class="fas fa-angle-left right"></i>
                   </p>
                 </a>
@@ -245,6 +253,36 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <li class="nav-item">
                       <a href="pages/UI/general.html" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
+                        <p>Calendario</p>
+                      </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                      <a href="pages/UI/icons.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>EPI</p>
+                      </a>
+                    </li>
+                  
+                </ul>
+              </li>
+
+
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-sync"></i>
+                  <p>
+                    Logistica
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+
+                <ul class="nav nav-treeview">
+
+                    <li class="nav-item">
+                      <a href="{% url 'fornecedores' %}"c class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
                         <p>Fornecedores</p>
                       </a>
                     </li>
@@ -253,7 +291,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <li class="nav-item">
                       <a href="pages/UI/icons.html" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
-                        <p>Comunicaçao</p>
+                        <p>EPI</p>
                       </a>
                     </li>
                   
@@ -261,13 +299,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>
 
               
-              <li class="nav-header">MULTI LEVEL EXAMPLE</li>
+              <li class="nav-header">PROJECTOS</li>
              
               <li class="nav-item has-treeview">
                 <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-circle"></i>
                   <p>
-                    Level 1
+                    MALAWI
                     <i class="right fas fa-angle-left"></i>
                   </p>
                 </a>
@@ -310,8 +348,101 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   
                 </ul>
               </li>
-             
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-circle"></i>
+                  <p>
+                    CORREDOR
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Level 2</p>
+                    </a>
+                  </li>
+                  <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>
+                        Level 2
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="far fa-dot-circle nav-icon"></i>
+                          <p>Level 3</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="far fa-dot-circle nav-icon"></i>
+                          <p>Level 3</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="far fa-dot-circle nav-icon"></i>
+                          <p>Level 3</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+              </li>
 
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon far fa-circle"></i>
+                  <p>
+                    CORUMANA
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Level 2</p>
+                    </a>
+                  </li>
+                  <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>
+                        Level 2
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="far fa-dot-circle nav-icon"></i>
+                          <p>Level 3</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="far fa-dot-circle nav-icon"></i>
+                          <p>Level 3</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="far fa-dot-circle nav-icon"></i>
+                          <p>Level 3</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+              </li>
 
 
 
@@ -337,7 +468,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Starter Page</li>
+              <li class="breadcrumb-item active">{% block caminho%} {%endblock%}</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -373,7 +504,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2021-2022 <a href="https://adminlte.io">Sociedade e Territorio </a>.</strong> Todos Direitos Reservados.
   </footer>
 </div>
 <!-- ./wrapper -->
